@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.Blinkinlabs.BlinkyPendant.firmware</id>
+  <name>BlinkyPendant</name>
+  <summary>Firmware for the Blinkinlabs BlinkyPendant device</summary>
+  <description>
+    <p>
+      Updating the firmware on your BlinkyPendant improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_1209&PID_8888 -->
+    <firmware type="flashed">7d2d31f2-8340-5ff7-b613-f4b135c33fa5</firmware>
+    <!-- USB\VID_1209&PID_8889 (bootloader mode) -->
+    <firmware type="flashed">3a31b186-498c-5f92-a664-05907e964c86</firmware>
+  </provides>
+  <url type="homepage">http://blinkinlabs.com/blinkypendant/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer_name>Blinkinlabs</developer_name>
+  <releases>
+    <release urgency="medium" version="3.00" date="2017-05-11">
+      <checksum filename="pendant-firmware-v300.dfu" target="content"/>
+      <description>
+        <p>
+          This release fixes a longstanding bug that caused the image output to
+          be partially corrupted, and adds a non-POV display mode.
+        </p>
+      </description>
+    </release>
+  </releases>
+</component>
